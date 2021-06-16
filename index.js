@@ -9,7 +9,7 @@ $(function () {
         var ethbf = $('input[name="ETHamountBF"]').val();
         var xrpbf = $('input[name="XRPamountBF"]').val();
         
-        var msg = `${key}\n積立頻度：${frequency}\n(bitFlyer)\nBTC：${btcbf}\nETH：${ethbf}\nXRP：${xrpbf}`;
+        var msg = `${key}\n積立頻度：${frequency}\n(bitFlyer)\nBTC：${btcbf}円\nETH：${ethbf}円\nXRP：${xrpbf}円`;
         sendText(msg);
 
         return false;
