@@ -5,11 +5,11 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var frequency = $('[name="frequency"] option:selected').val();
-        var BTCBF = $('input[name="BTCamountBF"]').val();
-        var ETHBF = $('input[name="ETHamountBF"]').val();
-        var XRPBF = $('input[name="XRPamountBF"]').val();
+        var btcbf = $('input[name="BTCamountBF"]').val();
+        var ethbf = $('input[name="ETHamountBF"]').val();
+        var xrpbf = $('input[name="XRPamountBF"]').val();
         
-        var msg = `${key}\n積立頻度：${frequency}\n(bitFlyer)\nBTC：${BTCBF}\nETH：${ETHBF}\nXRP：${XRPBF}`;
+        var msg = `${key}\n積立頻度：${frequency}\n(bitFlyer)\nBTC：${btcbf}\nETH：${ethbf}\nXRP：${xrpbf}`;
         sendText(msg);
 
         return false;
