@@ -4,7 +4,7 @@ var key = params.get('key');
 $(function () {
     // 送信
     $('form').submit(function () {
-        var frequency = $('select[name="frequency"]').val();
+        var frequency = $('[name="frequency"] option:selected').val();
         var BTCamountBF = $('input[name="BTCamountBF"]').val();
         var ETHamountBF = $('input[name="ETHamountBF"]').val();
         var XRPamountBF = $('input[name="XRPamountBF"]').val();
