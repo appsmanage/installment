@@ -26,11 +26,10 @@ function sendText(text) {
 // function sendMessages(text) {
     liff.sendMessages([{
         'type': 'text',
+        'text': "以下の内容で積立申請を受付けました。"
+    },
+        'type': 'text',
         'text': text
-    },{
-        "type": "sticker",
-        "packageId": "11539",
-        "stickerId": "52114113"
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
