@@ -27,7 +27,7 @@ function sendText(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': "以下の内容で積立申請を受付けました。"
-    },
+    },{
         'type': 'text',
         'text': text
     }]).then(function () {
