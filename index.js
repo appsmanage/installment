@@ -10,6 +10,7 @@ $(function () {
         var btcbf = $('input[name="BTCamountBF"]').val();
         var ethbf = $('input[name="ETHamountBF"]').val();
         var xrpbf = $('input[name="XRPamountBF"]').val();
+        var xlmbf = $('input[name="XLMamountBF"]').val();
         var apikey = $('input[name="apikey"]').val();
         var apisecret = $('input[name="apisecret"]').val();
         
