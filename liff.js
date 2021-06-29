@@ -18,7 +18,7 @@ function initializeLiff(liffId) {
         });
 }
 
-function sendText(text,apikye,apisecret) {
+function sendText(text) {
     // sendMessages(text);
 // }
 
