@@ -1,5 +1,3 @@
-var params = (new URL(document.location)).searchParams;
-var key = params.get('key');
 
 $(function () {
     // 送信
@@ -11,10 +9,8 @@ $(function () {
         var ethbf = $('input[name="ETHamountBF"]').val();
         var xrpbf = $('input[name="XRPamountBF"]').val();
         var xlmbf = $('input[name="XLMamountBF"]').val();
-        var apikey = $('input[name="apikey"]').val();
-        var apisecret = $('input[name="apisecret"]').val();
         
-        var msg = `${key}\nお名前：${username}\nEmail：${email}\n積立タイミング：${frequency}\nBTC：${btcbf}円\nETH：${ethbf}円\nXRP：${xrpbf}円\nXLM：${xlmbf}円\nAPI_KEY：${apikey}\nAPI_SECRET：${apisecret}`;
+        var msg = `積立申請フォーム\nお名前：${username}\nEmail：${email}\n積立タイミング：${frequency}\nBTC：${btcbf}円\nETH：${ethbf}円\nXRP：${xrpbf}円\nXLM：${xlmbf}円`;
         sendText(msg,apikey,apisecret);
 
         return false;
