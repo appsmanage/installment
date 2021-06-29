@@ -9,7 +9,7 @@ $(function () {
         var xlmbf = $('input[name="XLMamountBF"]').val();
         
         var msg = `積立申請フォーム\n積立タイミング：${frequency}\nBTC：${btcbf}円\nETH：${ethbf}円\nXRP：${xrpbf}円\nXLM：${xlmbf}円`;
-        sendText(msg,apikey,apisecret);
+        sendText(msg);
 
         return false;
     });
